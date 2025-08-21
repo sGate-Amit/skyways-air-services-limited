@@ -1,0 +1,11 @@
+/*
+Theme Name:     Trucking Child Theme
+Theme URI:      http://pixel-industry.com/
+Description:    Child theme for the Wordpress theme 
+Author:         Pixel Industry
+Author URI:     http://pixel-industry.com/
+Template:       trucking
+Version:        1.0
+*/
+
+@import url("../trucking/style.css");
