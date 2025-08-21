@@ -1,50 +1,1446 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html id="ie7" lang="en-US">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html id="ie8" lang="en-US">
+         <![endif]-->
+         <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+         <html lang="en-US">
+            <!--<![endif]-->
+            <head>
+               <meta charset="UTF-8" />
+               <meta name="viewport" content="width=device-width, initial-scale=1" />
+               <title>Skyways Air Services Limited  :: Home</title>
+               <meta name='robots' content='max-image-preview:large' />
+               <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px; }.wpcp-carousel-section .wpcp-single-item{border:1px solid #ddd;}</style>
+               <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+               <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+               <link rel='stylesheet' id='ht_ctc_main_css-css' href='css/main.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='extendify-sdk-utility-classes-css' href='css/extendify-utilities.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='cma-frontend-css' href='css/frontend.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='cma-animate-css-css' href='css/animate.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='responsive-lightbox-swipebox-css' href='css/swipebox/swipebox.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='tweetscroll-css' href='css/tweetscroll.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='wpcf-slick-css' href='css/slick.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='wp-carousel-free-fontawesome-css' href='css/font-awesome.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='wp-carousel-free-css' href='css/wp-carousel-free-public.min.css' type='text/css' media='all' />
+               <style id='wp-carousel-free-inline-css' type='text/css'>
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .wpcp-single-item {
+                  border: 1px solid #dddddd;
+                  }
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-prev,
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-next,
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-prev:hover,
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-next:hover {
+                  background: none;
+                  border: none;
+                  font-size: 30px;
+                  }
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-prev i,
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-next i {
+                  color: #aaa;
+                  }
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-prev i:hover,
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 .slick-next i:hover {
+                  color: #52b3d9;
+                  }
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 ul.slick-dots li button {
+                  background-color: #cccccc;
+                  }
+                  #sp-wp-carousel-free-id-1305.sp-wpcp-1305 ul.slick-dots li.slick-active button {
+                  background-color: #52b3d9;
+                  }
+                  @media screen and (max-width: 479px) {
+                  #sp-wp-carousel-free-id-1305.nav-vertical-center {
+                  padding: 0;
+                  }
+                  }#sp-wp-carousel-free-id-1222.sp-wpcp-1222 .wpcp-single-item {
+                  border: 1px solid #dddddd;
+                  }
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-prev,
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-next,
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-prev:hover,
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-next:hover {
+                  background: none;
+                  border: none;
+                  font-size: 30px;
+                  }
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-prev i,
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-next i {
+                  color: #aaa;
+                  }
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-prev i:hover,
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 .slick-next i:hover {
+                  color: #52b3d9;
+                  }
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 ul.slick-dots li button {
+                  background-color: #cccccc;
+                  }
+                  #sp-wp-carousel-free-id-1222.sp-wpcp-1222 ul.slick-dots li.slick-active button {
+                  background-color: #52b3d9;
+                  }
+                  @media screen and (max-width: 479px) {
+                  #sp-wp-carousel-free-id-1222.nav-vertical-center {
+                  padding: 0;
+                  }
+                  }#sp-wp-carousel-free-id-1173.sp-wpcp-1173 .wpcp-single-item {
+                  border: 1px solid #dddddd;
+                  }
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-prev,
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-next,
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-prev:hover,
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-next:hover {
+                  background: none;
+                  border: none;
+                  font-size: 30px;
+                  }
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-prev i,
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-next i {
+                  color: #aaa;
+                  }
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-prev i:hover,
+                  #sp-wp-carousel-free-id-1173.sp-wpcp-1173 .slick-next i:hover {
+                  color: #52b3d9;
+                  }
+                  @media screen and (max-width: 479px) {
+                  #sp-wp-carousel-free-id-1173.nav-vertical-center {
+                  padding: 0;
+                  }
+                  }
+               </style>
+               <link rel='stylesheet' id='cma-style-tooltip-css' href='css/tooltips/css/hint.min.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='cma-styles-bootstrap-css' href='css/bootstrap.min.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='volcanno-style-css' href='css/theme-style.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='pixons-css' href='css/style.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='linecons-css' href='css/linecons.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='nivoslider-css' href='css/nivo-slider.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='hint-css-css' href='css/hint.min.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='owl-carousel-css' href='css/owl.carousel.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='magnific-popup-css' href='css/magnific-popup.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='volcanno-google-fonts-css' href='//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200,100%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' type='text/css' media='all' />
+               <link rel='stylesheet' id='volcanno-responsive-css' href='css/responsive.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='volcanno-retina-css-css' href='css/retina.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='volcanno-color-style-css' href='css/color-default.css' type='text/css' media='screen' />
+               <link rel='stylesheet' id='volcanno_custom_css-css' href='css/custom-styles.php' type='text/css' media='screen' />
+               <link rel='stylesheet' id='ms-main-css' href='css/masterslider.main.css' type='text/css' media='all' />
+               <link rel='stylesheet' id='ms-custom-css' href='css/custom.css' type='text/css' media='all' />
+               <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%7CTitillium%20Web:300,400&#038;subset=latin-ext,latin&#038;display=swap&#038;ver=1692441911" />
+               <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%7CTitillium%20Web:300,400&#038;subset=latin-ext,latin&#038;display=swap&#038;ver=1692441911" media="print" onload="this.media='all'">
+               <noscript>
+                  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%7CTitillium%20Web:300,400&#038;subset=latin-ext,latin&#038;display=swap&#038;ver=1692441911" />
+               </noscript>
+               <script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
+               <script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+               <script type="text/javascript" src="js/cma.frontend.min.js" id="cma-frontend-js"></script>
+               <script type="text/javascript" src="js/waypoints.min.js" id="cma-waypoints-js"></script>
+               <script type="text/javascript" src="js/jquery.stellar.min.js" id="cma-stellar-js"></script>
+               <script type="text/javascript" src="js/jquery.swipebox.min.js" id="responsive-lightbox-swipebox-js"></script>
+               <script type="text/javascript" src="js/underscore.min.js" id="underscore-js"></script>
+               <script type="text/javascript" src="js/infinite-scroll.pkgd.min.js" id="responsive-lightbox-infinite-scroll-js"></script>
+               <script type="text/javascript" src="js/front.js" id="responsive-lightbox-js"></script>
+               <script type="text/javascript" src="js/jquery.tweetscroll.js" id="tweetscroll-js"></script>
+               <script type="text/javascript" src="js/volcanno.functions.js" id="volcanno_functions-js"></script>
+               <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+			   .service-feature-box .service-body {	min-height: 221px;}
+			   </style>
+               <link rel="icon" href="../images/skywayslogo_new.png" sizes="32x32" />
+               <link rel="icon" href="../images/skywayslogo_new.png" sizes="192x192" />
+               <link rel="apple-touch-icon" href="../images/skywayslogo_new.png" />
+               <meta name="msapplication-TileImage" content="../images/skywayslogo_new.png" />
+               <style type="text/css" id="wp-custom-css">
+                  .d-none{display:none;}
+                  .image-background{height: 570px !important;}
+                  .custom-heading h2{font-weight:500;}
+                  .page-id-1291 .custom-heading02:after {display:none;}
+                  #txtfs .textwidget p{font-size:24px!important;
+                  font-weight:600;
+                  color:#fac312;}
+                  .contact-info-list li{background-image:none!important;}
+                  #black-studio-tinymce-2 li{background-image:none!important;font-size:16px;}
+                  #bbst{padding-top:0px!important;}
+                  #sstop .service-box{padding-top:0px!important;}
+                  .request_quote .input-group{width:100%;margin-bottom:15px;}
+                  #bbst .hprqf h2{color:#ffffff;}
+                  #bbst .hprqf .custom-heading:after{background-color: #ffffff;}
+                  @media only screen 
+                  and (min-device-width : 320px) 
+                  and (max-device-width : 480px) {
+                  #txtfs{background-size: cover!important;}
+                  .dl-menuwrapper button{border-radius:0px!important;
+                  -webkit-border-radius:0px!important;
+                  -moz-border-radius: 0px!important;color: #333;padding-left: 25px!important;width:auto!important;}
+                  }
+               </style>
+               <style id="volcanno_options-dynamic-css" title="dynamic-css" class="redux-options-output">.page-title-style02 h1,.page-title-style01 h1{color:#FFFFFF;}body{font-family:"Open Sans";line-height:22px;font-weight:normal;font-style:normal;color:#777;font-size:13px;font-display:swap;}p{font-family:"Open Sans";line-height:22px;font-weight:normal;font-style:normal;color:#777;font-size:13px;font-display:swap;}h1{font-family:"Titillium Web";line-height:48px;font-weight:300;font-style:normal;color:#333333;font-size:42px;font-display:swap;}h2{font-family:"Titillium Web";line-height:42px;font-weight:300;font-style:normal;color:#333333;font-size:36px;font-display:swap;}h3{font-family:"Titillium Web";line-height:24px;font-weight:400;font-style:normal;color:#333333;font-size:21px;font-display:swap;}h4{font-family:"Titillium Web";line-height:22px;font-weight:400;font-style:normal;color:#333333;font-size:18px;font-display:swap;}h5{font-family:"Titillium Web";line-height:18px;font-weight:400;font-style:normal;color:#333333;font-size:16px;font-display:swap;}h6{font-family:"Titillium Web";line-height:18px;font-weight:400;font-style:normal;color:#333333;font-size:15px;font-display:swap;}</style>
+          
+</head>
+            <body class="home wp-singular page-template-default page page-id-18 wp-theme-trucking wp-child-theme-trucking-child-theme  homepage content-maker _masterslider _msp_version_3.4.5">
+               <!-- #header-wrapper start -->
+               <section id="header-wrapper" class="clearfix header-wrapper  search-hidden">
+                  <header id="header" class="header-style02">
+                     <!-- #top-bar-wrapper start -->
+                     <div id="top-bar-wrapper" class="clearfix ">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-6 col-xs-9">
+                              </div>
+                              <!-- .col-md-6 end -->
+                              <div class="col-md-6 col-xs-3">
+                              </div>
+                              <!-- .col-md-6 end -->
+                           </div>
+                           <!-- .row end -->
+                        </div>
+                        <!-- .container end -->
+                     </div>
+                     <!-- #top-bar-wrapper end -->
+                     <div class="header-inner">
+                        <!-- .container start -->
+                        <div class="container">
+                           <div class="main-nav">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <!-- .navbar.pi-mega start -->
+                                    <nav class="navbar navbar-default nav-left pi-mega" role="navigation">
+                                       <!-- .navbar-header start -->
+                                       <div class="navbar-header">
+                                          <!-- .logo start -->
+                                          <div class="logo">
+                                             <a href="/"><img src='../images/skywayslogo_new.png' alt='Skyways Air Services Limited' /></a>
+                                          </div>
+                                          <!-- logo end -->
+                                       </div>
+                                       <!-- Collect the nav links, forms, and other content for toggling -->
+                                       <div class="collapse navbar-collapse">
+                                          <ul id="menu-navigation" class="nav navbar-nav pi-nav menu">
+                                             <li id="menu-item-1020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-1020 dropdown"><a href="/">Home<span></span></a></li>
+                                             <li id="menu-item-1021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1021 dropdown"><a href="/about-us/">About Us<span></span></a></li>
+                                             <li id="menu-item-1023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1023 dropdown">
+                                                 <a href="#">Services</a><span></span></a>
+                                              <ul class="dropdown-menu">
+                                                   <li id="menu-item-1436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1436 dropdown">
+                                                      <a href="/our-services">Our Services</a>
+                                                      <ul class="dropdown-menu depth-1">
+                                                          <li id="menu-item-1103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103 dropdown"><a href="/air-freight">Air Freight</a></li>
+                                                   <li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104 dropdown"><a href="/contract-logistics">Contract Logistics</a></li>
+                                                   <li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127 dropdown"><a href="/cuddle">Cuddle</a></li>
+                                                   <li id="menu-item-1131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1131 dropdown"><a href="/d-tox">D-tox</a></li>
+                                                   <li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102 dropdown"><a href="/warehousing">Warehousing</a></li>
+                                                      </ul>
+                                                   </li>
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+                                                   
+                                                  <!-- <li id="menu-item-1467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1467 dropdown"><a href="//#">Subsidiaries Services</a></li>-->
+                                                </ul>
+                                             </li>
+                                             <li id="menu-item-1435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1435 dropdown">
+                                                 <a href="/investors/">Investors</a><span></span></a>
+                                             </li>
+                                             <li id="menu-item-1433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1433 dropdown"><a href="/board-of-directors/">Board of Directors<span></span></a></li>
+                                             <li id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641 dropdown"><a href="#">Group Companies<span></span></a>
+											    <ul class="dropdown-menu desktopmenu">
+												  <li id="menu-item-1103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103 dropdown"><a href="/group-companies">Group Companies</a></li>
+                                                   <li id="menu-item-1103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103 dropdown"><a href="/subsidiaries">Subsidiaries</a></li>
+                                                </ul>
+											 </li>
+                                             <li id="menu-item-1022" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1022 dropdown"><a href="/contacts/">Contact Us<span></span></a></li>
+                                             <li id="menu-item-1197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1197 dropdown"><a href="/tracking">Tracking<span></span></a></li>
+                                          </ul>
+                                       
+                                          </div>
+                                       </div>
+                                       <!-- .navbar.navbar-collapse end --> 
+                                    </nav>
+                                    <!-- .navbar.pi-mega end -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+                          <div class="menu_box">
+                            <div id="mySidenav" class="sidenav menu_main">
+                                <div class="closeee"><h5>Menu</h5><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+                               <ul id="menu-navigation-1" class="menu dl-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-1020"><a href="/">Home</a><span></span></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1021"><a href="/about-us/">About Us</a><span></span></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1023">
+                                                   <a href="javascript:void(0)">Our Services<i class="arrowMenu">&#9013;</i></a>
+                                                   <ul class="dl-submenu">
+												      <div class="backmenu"><h3 class="backsingle">Back</h3> <h5><a href="/our-services">Our Services</a> </h5></div>
+													  
+                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="/air-freight">Air Freight</a></li>
+                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="/contract-logistics">Contract Logistics</a></li>
+                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="/cuddle">Cuddle</a></li>
+                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1131"><a href="/d-tox">D-tox</a></li>
+                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="/warehousing">Warehousing</a></li>
+                                                   </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1435">
+                                                   <a href="/investors/">Investors</a>
+                                                 
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1433"><a href="/board-of-directors/">Board of Directors</a><span></span></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641"><a href="avascript:void(0)">Group Companies <i class="arrowMenu">&#9013;</i></a>
+												
+												    <ul class="dl-submenu">
+												      <div class="backmenu"><h3 class="backsingle">Back</h3> <h5><a href="#">Group Companies </a> </h5></div>
+															  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="/group-companies">Group Companies</a></li>
+													       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="/subsidiaries">Subsidiaries</a></li>
+													 
+													  
+                                                   </ul>
+												
+												
+												</li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1022"><a href="/contacts/">Contact Us</a><span></span></li>
+                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1197"><a href="/tracking">Tracking</a><span></span></li>
+                                             </ul>
+                            </div>
+                            <span class="menu_b" onclick="openNav()">&#9776;</span>
+                        </div>
+
+
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu_b").addEventListener("click", () => {
+      document.getElementById("mySidenav").style.width = "100%";
+    });
+
+    document.querySelector(".closebtn").addEventListener("click", () => {
+      document.getElementById("mySidenav").style.width = "0";
+    });
+  });
+</script>
+
+<!-- Your menu HTML goes here -->
+
+<script is:inline>
+  // Handle first-level menu items
+  document.querySelectorAll(".menu_main > ul > li").forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const dropdown = this.querySelector(".dl-submenu");
+      if (!dropdown) return;
+
+      const isOpen = dropdown.style.display === "block";
+
+      // Close all submenus + sub-submenus
+      document.querySelectorAll(".dl-submenu").forEach(dd => dd.style.display = "none");
+      document.querySelectorAll(".dl-submenusub").forEach(dd => dd.style.display = "none");
+
+      if (!isOpen) {
+        dropdown.style.display = "block";
+      }
+    });
+  });
+
+  // Handle second-level menu items (inside dl-submenu)
+  document.querySelectorAll(".menu_main > ul > li > ul > li").forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const subDropdown = this.querySelector(".dl-submenusub");
+      if (!subDropdown) return;
+
+      const isOpen = subDropdown.style.display === "block";
+
+      // Close all sub-submenus
+      document.querySelectorAll(".dl-submenusub").forEach(dd => dd.style.display = "none");
+
+      if (!isOpen) {
+        subDropdown.style.display = "block";
+      }
+    });
+  });
+
+  // Prevent closing when clicking inside submenu or sub-submenu
+  document.querySelectorAll(".dl-submenu, .dl-submenusub").forEach(function (submenu) {
+    submenu.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+
+  // Back buttons
+  document.querySelectorAll(".backsingle").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenu");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
+    });
+  });
+
+  document.querySelectorAll(".backdouble").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenusub");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
+    });
+  });
+
+  // Clicking outside closes all
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".dl-submenu, .dl-submenusub").forEach(dd => dd.style.display = "none");
+  });
+</script>
+
+                  </header>
+               </section>
+               <!-- #header-wrapper end -->
+
+		 <section class='pagevideoMain'>
+		 
+		<div class="videoBox"> 
+<video autoplay muted playsinline loop>
+		
+		<!--<source src="images/video_home.mp4" type="video/mp4"> -->
+
+<source src="https://r2.skyways-air.in/SLS-Web-Banner.mp4" type="video/mp4"> 
+
+
+</video>
+
+</div>
+
+	<div class="vdeeoTextMain">
+	<div class="container">
+		 	<div class="vdeeoText">
+		<h2>Moving With You</h2> 
+		
+		 </div> </div>
+		  </div>
+  </section>
+
+
+
+
+
+
+
+
+              <div class='homeaboutMAIN    '>
+			   <div class='serviceWrap ' >
+			   
+			         <div class='col-md-12 wow slideInDown' >
+					            <div class="custom-heading  ">
+					 <h2>About us </h2></div></div>
+			   
+                            <div class='col-md-6 wow slideInUp'  data-wow-delay="0.4s">
+                         <div class='haboutcontent'>
+
+<p>Formed in 1984, Skyways Air Services Ltd. has created a well-integrated Logistics Infrastructure and processes making it a market leader in Air Freight in India and also a well-established player providing other Logistics services through its subsidiaries across ocean freight forwarding, trucking, warehousing, custom broking, technology driven express cargo and parcel delivery and a wide range of Value-Added Services (VAS) for a diverse customer base across domestic and international markets. We have been ranked as one of the top forwarders over the last decade  in India for Air Exports. We have been ranked No. 1 “Air Freight Forwarder” in terms of AWBs we executed as per the 'World ACD' for the last 3 years ( CY 2024, 2023 and 2022). </p>
+
+
+
+ </div> </div>
+ 
+                <div class='col-md-6 wow slideInUp' data-wow-delay="0.8s" >
+                         <div class='haboutcontent'>
+
+<p>Skyways has constantly innovated and expanded its growth avenues. To support the Board’s strategic vision, our company incorporated and acquired multiple subsidiary entities, both within India and across key international markets. These subsidiaries were established with specific mandates—either to offer specialized value-added services or to cater to niche product segments within the freight forwarding domain. This approach has allowed us to strengthen our presence across the logistics value chain and deliver end-to-end freight forwarding solutions, tailored to the diverse needs of our clientele. Below is a comprehensive overview of the business activities conducted by our subsidiaries and associates, along with the value-added services they provide to enhance operational efficiency and drive the sustained expansion of the Skyways Group. <a href="/about-us" class="hreadmore">Read More</a></p>
+
+
+
+ </div> </div>
+ 
+ 
+ 
+ 
+		  </div>  </div>
+
+
+
+		 <section class='page-content' style='margin-bottom: 0px;margin-top: 0px;'  id='sstop'>
+                  <section class='container-fluid serviceOPuter wow slideInUp' >
+                     <div class='row2 service-boxx' style='margin-bottom: 0px ;margin-top: 0px; '>
+	
+                        <div class='col-md-12' >
+                         			      <div class='serviceWrap'>  
+										  <!--<div class='custom-heading'>
+                              <h2>Our Services</h2>
+                           </div>-->
+                           <div class="cma-wp-widget widget widget_text cma_widget_text" id="cma-widget-WP_Widget_Text-7">
+                              <div class="custom-heading centered margin00">
+                                
+<h2 class="textCenter">Our Services</h2>
+
+
+								
+							
+                              </div>
+                           </div>
+                        </div>      </div>
+						
+                      <div class='col-md-12 ' >
+                           <div class='serviceWrap'>   
+                         <div class='serviceMain'>
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/Air-Freight.jpg' alt='Air Freight'/>
+                                          <a href='/air-freight' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/air-freight'>
+                                                <h4>Air Freight</h4>
+                                             </a>
+                                          </div>
+                                          <p>When it comes to air freight, Skyways doesn’t just deliver—we set new benchmarks in innovation and reliability. </p>
+                                       </div>
+                                    </div>
+                                
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/Contract-Logistics.jpg' alt='Contract Logistics'/>
+                                          <a href='/contract-logistics' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/contract-logistics'>
+                                                <h4>Contract Logistics</h4>
+                                             </a>
+                                          </div>
+                                          <p>At Skyways, we understand that every business has unique logistics needs.</p>
+                                       </div>
+                                    </div>
+                         
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/Cuddle.jpg' alt='Cuddle'/>
+                                          <a href='/cuddle' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/cuddle'>
+                                                <h4>Cuddle</h4>
+                                             </a>
+                                          </div>
+                                          <p>Transporting live animals requires expertise, meticulous planning, and strict compliance with international regulations. </p>
+                                       </div>
+                                    </div>
+                                
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/D-tox.jpg' alt='D-tox'/>
+                                          <a href='/d-tox' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/d-tox'>
+                                                <h4>D-tox</h4>
+                                             </a>
+                                          </div>
+                                          <p>The demand for Logistics and Supply chain management, being the backbone of any trade, is omnipresence and ever increasing. </p>
+                                       </div>
+                                    </div>
+                           
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/Warehousing.jpg' alt='Warehousing'/>
+                                          <a href='/warehousing' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/warehousing'>
+                                                <h4>Warehousing</h4>
+                                             </a>
+                                          </div>
+                                          <p>We at Skyways believe in providing wholesome logistic solutions.</p>
+                                       </div>
+                                    </div>
+                                 </div>       </div>   
+								 <!--<div class='owl-item'>
+                                    <div class='service-feature-box'>
+                                       <div class='service-media'>
+                                          <img src='images/Cold-Storage.jpg' alt='Cold Storage'/>
+                                          <a href='/cold-storage' class='read-more02'>
+                                          <span>
+                                          Read more
+                                          <i class='fa fa-chevron-right'></i>
+                                          </span>
+                                          </a>
+                                       </div>
+                                       <div class='service-body'>
+                                          <div class='custom-heading'>
+                                             <a href='/cold-storage'>
+                                                <h4>Cold Storage</h4>
+                                             </a>
+                                          </div>
+                                          <p>Ideal for Pharmaceuticals and other temperature sensitive cargo.</p>
+                                       </div>
+                                    </div>
+                                 </div>-->
+                            
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </section>
+       
+                
+				<section class='shipmentsbox wow slideInUp'>
+                  
+                        <div class='col-md-12 '>
+						<div class='shipmentsboxinn'>
+                           <div class='custom-heading centered margin00'>
+                              <h2>Ensure safety and timely delivery of shipments!</h2>
+                           </div>
+						   
+						   <figure class="imagesimg"><img src="images/40-Years-Celebration-Pic-22.jpg"></figure>
+						   
+						   
+                        </div>
+                     </div>
+                    
+               </section>
+             <!--  <section class='page-content custom-background image-background' style='background-image: url(images/40-Years-Celebration-Pic-22.jpg);background-size: 100% 100%;background-repeat: no-repeat;margin-bottom: 40px;'  >
+                  <section class='container'>
+                     <div class='row' style=''>
+                        <div class='col-md-6  empty' style='' ></div>
+                        <!--<div class='col-md-6 ' style='' >
+                           <a href='/contacts' class='btn yellow btn-medium float-right'  ><span> CONTACT NOW</span></a>
+                           <div class='clearfix'></div>
+                        </div>
+                     </div>
+                  </section>
+               </section>-->
+			   
+			   
+               <section class='page-content' style=''  >
+			   
+                       <div class='AwardsAndABoxouter'>
+					   <div class='serviceWrap'>
+                     <div class='row2'>
+                        <div class='col-md-12 ' >
+                           <div class='custom-heading centered'>
+                              <h2>Awards And Accolades</h2>
+                           </div>
+						   
+						   
+						   
+                           <div style='margin-top: 30px;' class='AwardsAndAccoladesMain'>
+                             
+                                          <div class="AwardsAndABox agentaward wow slideInUp" data-wow-delay="0.1s">
+                                             <figure>
+											 <img loading="lazy" decoding="async" src="images/10-Top-Cargo-Agent-Award.png" alt="Awards" >
+											 </figure>
+											 <h2>Emirates SkyCrago</h2>
+                                          </div>
+										  
+										  
+										    <div class="AwardsAndABox agentaward wow slideInUp" data-wow-delay="0.2s">
+                                             <figure>
+											 <img loading="lazy" decoding="async" src="images/ACE_Aviation_Cargo__Express-transformed.png" alt="Awards" >
+											 </figure>
+											 <h2> Air Cargo Conclave & awards 2022</h2>
+                                          </div>
+										  
+										  
+										  
+										      <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.3s">
+                                             <figure>
+											 <img loading="lazy" decoding="async" src="images/ACE-Northern-Airfreight-forwarder-of-the-year.png" alt="Awards" >
+											 </figure>
+											 <h2>ACE Northern Airfreight forwarder of the year</h2>
+                                          </div>
+										  
+										   
+										     <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.4s">
+                                             <figure>
+											<img loading="lazy" decoding="async" src="images/CFO_Vision__amp__Innovation_Summit__amp__Awards_2022-transformed.png" alt="Awards" >
+											 </figure>
+											 <h2>CFO amp Awards 2022</h2>
+                                          </div>
+										  
+                                        <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.5s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/Multimodal_Logistics_Awards-transformed.png" alt="Awards" w>
+											 </figure>
+											 <h2>Multimodal Logistics Awards</h2>
+                                          </div>
+										  
+										  
+										    <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.6s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/Multimodal-logistics-award-Fright-forwarder-of-the-year-Air-Export.png" alt="Awards" w>
+											 </figure>
+											 <h2>Multimodal logistics award</h2>
+                                          </div>
+										  
+										  
+										  
+										  
+										   
+										    <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.7s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/Singapore_Airlines_Cargo-transformed.png" alt="Awards" w>
+											 </figure>
+											 <h2>Singapore Airlines Cargo</h2>
+                                          </div>
+										  
+									
+                                      
+									     <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.8s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/Sri_Lanka_Airlines.png" alt="Awards" w>
+											 </figure>
+											 <h2>Sri Lanka Airlines</h2>
+                                          </div>
+										  
+									  
+									   <div class="AwardsAndABox wow slideInUp" data-wow-delay="0.9s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/Stat-trade-times-Internationl-freight-forwarder-Region-india.png" alt="Awards" >
+											 </figure>
+											 <h2>Stat trade times Internationlfreight</h2>
+                                          </div>
+									
+									
+										
+										    
+									   <div class="AwardsAndABox wow slideInUp" data-wow-delay="1.0s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/STAT-transformed.png" alt="Awards" >
+											 </figure>
+											 <h2>Skyways Air Services Pvt. Ltd.</h2>
+                                          </div>
+										  
+										  
+											   <div class="AwardsAndABox wow slideInUp" data-wow-delay="1.2s">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/WCA_Award.png" alt="Awards" >
+											 </figure>
+											 <h2>WCA Award</h2>
+                                          </div>
+										  
+										  
+										
+										
+                                       </div>
+                               
+						   	   
+						   
+                        </div>
+                     </div>
+						   
+						   
+                        </div>
+                     </div>
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					        <div class='logoOuterr wow slideInUp' >
+					            <div class='container' >
+                     <div class='row' style=''>
+                        <div class='col-md-12 ' >
+                           <div class='custom-heading centered'>
+                              <h2>Accreditation</h2>
+                           </div>
+                               <div  class='alllogoMain'>
+                             
+										  
+										  
+										  
+										       <div class="hlogo">
+                                             <figure>
+											 <img loading="lazy" decoding="async" src="images/logo9.png" alt="Accreditation" >
+											 </figure>
+											<h2> International Air Transport Association</h2>
+                                          </div>
+										  
+										  
+										     <div class="hlogo">
+                                             <figure>
+											 <img loading="lazy" decoding="async" src="images/aeo.png" alt="Accreditation">
+                                           </figure>
+											<h2>The Indian AEO Programme</h2>
+                                          </div>
+										  
+										  
+										  
+										    <div class="hlogo">
+                                             <figure>
+											<img loading="lazy" decoding="async" src="images/adp.png" alt="Accreditation">
+                                           </figure>
+											<h2>GDP Certification</h2>
+                                          </div>
+										  
+										  
+										     <div class="hlogo">
+                                             <figure>
+										<img loading="lazy" decoding="async" src="images/iso9001-2025.png" alt="Accreditation" >
+                                           </figure>
+											<h2>Quality Management System</h2>
+                                          </div>
+										  
+										  
+										  
+										  
+										     <div class="hlogo">
+                                             <figure>
+										 <img loading="lazy" decoding="async" src="images/iso.png" alt="Accreditation">
+                                           </figure>
+										<h2>Environment Management System</h2>
+                                          </div>
+										  
+										      <div class="hlogo">
+                                             <figure>
+										 <img loading="lazy" decoding="async" src="images/iso45001-2018.png" alt="Accreditation" width="107" height="84">
+                                           </figure>
+										<h2>Health and Safety Management System</h2>
+                                          </div>
+										  
+										   <div class="hlogo">
+                                             <figure>
+										 <img loading="lazy" decoding="async" src="images/dcba.png" alt="Accreditation" width="107" height="84">
+                                           </figure>
+										<h2>Delhi Custom House Broker Association </h2>
+                                          </div>
+										  
+										  
+										  
+										  
+                                       </div>
+                               
+						   
+						   
+                        </div>
+                     </div>
+					   </div>  </div>
+					 
+					 
+					 
+					        <div class='logoOuterr wow slideInUp' >
+					            <div class='container' >
+								<div class='row' style=''>
+                        <div class='col-md-12 ' style='' >
+                           <div class='custom-heading centered'>
+                              <h2>Affiliation</h2>
+                           </div>
+						   
+                         <div  class='alllogoMain'>
+                             
+										  
+										  
+										  
+										       <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo1.png" alt="Affiliation">
+											    </figure>
+										<h2>ACCAI</h2>
+                                          </div>
+											 
+											 
+											 
+											     <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo3.png" alt="Affiliation">
+											    </figure>
+										<h2>Confederaton of india industry</h2>
+                                          </div>
+											 
+											 
+											    <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo4.png" alt="Affiliation">
+											    </figure>
+										<h2> Federation of Asia Pacific Aircargo Associations</h2>
+                                          </div>
+											 
+											 
+											 	    <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo5.png" alt="Affiliation">
+											    </figure>
+										<h2>Federation of Freight Forwarders  associations in India </h2>
+                                          </div>
+											 
+											 
+											  	    <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo6.png" alt="Affiliation">
+											    </figure>
+										<h2> International Federation of Freight Forwarders Associations</h2>
+                                          </div>
+                                       
+                                     	    <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo7.png" alt="Affiliation">
+											    </figure>
+										<h2> Federation of Indian Chambers of Commerce</h2>
+                                          </div>
+                                       
+									
+									   <div class="hlogo">
+                                             <figure>
+                                             <img src="images/logo8.png" alt="Affiliation">
+											    </figure>
+										<h2>Federation of Indian Export Organisations </h2>
+                                          </div>
+                                       
+									
+                          
+						   
+						   
+                        </div>
+                     </div>   </div>   </div>   </div>
+					 
+					
+
+					        <div class='logoOuterr wow slideInUp' >
+					            <div class='container' >
+					<div class='row' style=''>
+                        <div class='col-md-12 ' style='' >
+                           <div class='custom-heading centered'>
+                              <h2>Our Carrier Partners</h2>
+                           </div>
+						   
+						   
+       <div  class='alllogoMain networklgoSize heightNone'>
+                             
+										  
+										  
+										  
+										       <div class="hlogo">
+                                          
+                                             <figure><img src="images/British.png" /></figure>
+										<h2 class="nwhide">The British Airways Experience</h2>
+                                          </div>
+										  
+										  
+										
+										       <div class="hlogo">
+                                           
+                                              <figure><img src="images/Emirates-Logo1.png" /></figure>
+										<h2 class="nwhide">Emirates | Fly Better</h2>
+                                          </div>
+										    
+
+
+										  
+										       <div class="hlogo">
+                                        
+                                           <figure><img src="images/lufthansa-cargo.png" /></figure>
+										<h2 class="nwhide">Lufthansa Cargo: Your expert for air freight</h2>
+                                          </div>
+										  
+										  
+										
+										       <div class="hlogo">
+                                            
+                                              <figure><img src="images/qatar_airways.png" /></figure>
+										<h2 class="nwhide">Qatar Airways: Book Flights with a World-class Airline</h2>
+                                          </div>
+										    
+
+  
+										       <div class="hlogo">
+                                          
+                                          <figure><img src="images/Saudia.png" /></figure>
+										<h2 class="nwhide">Saudia Cargo</h2>
+                                          </div>
+										  
+										  
+										
+
+
+
+
+										       <div class="hlogo">
+                                          
+                                         <figure><img src="images/airindia.png" /></figure>
+										<h2 class="nwhide">Air India</h2>
+                                          </div>
+										    
+
+										       <div class="hlogo">
+                                          
+                                         <figure><img src="images/Turkish_Airlines.png" /></figure>
+										<h2 class="nwhide">Turkish Airlines</h2>
+                                          </div>
+										    
+
+
+  </div>
+</div>
+
+                        </div>
+                     </div>
+                        </div>
+                     </div>
+					 
+					 
+	
+	
+	
+	<style>
+	
+.largeimg {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  width: 100%;
+}
+.largeimg ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  width: 100%;
+}
+.largeimg ul li {
+margin: 0 0.3%;
+  display: inline-block;
+  width: 13%;
+  justify-content: center;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  vertical-align: top;
+}
+.largeimg ul li img {
+  max-width: 142px;
+  /*! border: 1px solid #ccc; */
+  max-width: 128px;
+}
+.largeimg ul li figure {
+	display: flex;
+	vertical-align: top;
+	align-items: center;
+	justify-content: center;
+	min-height: 73px;
+}
+
+
+
+.wcps {
+	display: flex;
+	justify-content: center;
+}
+.wcps .wpcp-single-item {
+  margin: 0 .3%;
+  display: inline-block;
+  width: 13%;
+  justify-content: center;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  vertical-align: top;
+}
+
+
+
+</style>
+	
+
+ 
+
+		 
+					        <div class='logoOuterr wow slideInUp' >
+					            <div class='container' >
+					 <div class='row' style=''>
+                        <div class='col-md-12 ' style='' >
+                           <div class='custom-heading centered '>
+                              <h2>Our Network</h2>
+                           </div>
+                          				   
+       <div  class='alllogoMain networklgoSize'>
+                             
+										  
+										  
+										  
+										       <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/Global-1.png" alt="Our Network"></figure>
+										<h2>Global Freight Alliance</h2>
+                                          </div>
+										  
+										  
+                         
+										       <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/wca.png" alt="Our Network"></figure>
+										<h2>WCAworld: The Largest and Most Influential Logistics Network </h2>
+                                          </div>
+                                      
+									  
+									       <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/twig.png" alt="Our Network"></figure>
+										<h2>Twig Logistics Cargo</h2>
+                                          </div>
+                                      
+									  
+									       <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/c5c.png" alt="Our Network"></figure>
+										<h2> C5C Network Continents</h2>
+                                          </div>
+									  
+									
+									   <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/aop.png" alt="Our Network"></figure>
+										<h2>AOP Air & Ocean Partners </h2>
+                                          </div>
+									
+									
+									
+									   <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/new-mgln-logo-white.png" alt="Our Network"></figure>
+										<h2> MGLN Majestic Global Logistics Network</h2>
+                                          </div>
+									
+									   <div class="hlogo">
+                                          
+                                             <figure><img loading="lazy" decoding="async" src="images/parnity-logo@2x-1.png" alt="Our Network"></figure>
+										<h2>Parnity</h2>
+                                          </div>
+									
+									
+                                       </div>
+                              
+							  
+							  
+                           </div>
+						   
+						   
+								   
+						   
+						   
+						   
+						   
+						   
+						   
+						   
+                        </div>
+                     </div>	   
+                        </div>
+                     </div>
+                    
+                  </section>
+               </section>
+			   
+			   
+			   
+               <section class='bottomform wow slideInUp' >
+                  <div class='container'>
+                     <div class='row' style='margin-bottom: 0px ;margin-top: 0px;'>
+                        
+						<div class='col-md-6 padding0 ' >
+						      <div class='bformLeft bformCommon' >
+                           <div class='custom-heading'>
+                              <h2>What makes us special?</h2>
+                           </div>
+					
+						   
+						   
+                           <div style='margin-top: 30px;margin-bottom: 30px;' class=''>
+                              <div class="cma-wp-widget widget widget_text cma_widget_text" id="cma-widget-WP_Widget_Text-18">
+                                 <div class="textwidget">
+                                    <p>We look for solutions that meet your needs to ensure customer satisfaction and compliance with supply chain timing and regulations.</p>
+                                 </div>
+                              </div>
+                           </div>
+						   	   <figure class="getQuote"><img src="images/get_quote.jpg"></figure>
+						   
+                           <img src='images/servirce-icons.jpg' class='center' title='servirce-icons' alt='servirce-icons' width='600' height='228'/>
+                           <div class='clearfix'></div>
+						   
+						   
+                        </div>   </div>
+						
+						
+                        <div class='col-md-6 padding0'  >
+						      <div class='bformRight bformCommon' >
+                           <div class='custom-heading'>
+                              <h2>Request A Quote</h2>
+                           </div>
+                           <div class='cma-wysiwyg-editor'>
+                              <div role="form" class="wpcf7" id="wpcf7-f468-p18-o1" lang="en-US" dir="ltr">
+                                 <div class="screen-reader-response">
+                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                    <ul></ul>
+                                 </div>
+								 
+								 <iframe onload="javascript:parent.scrollTo(0,0);" height="730" allowTransparency="true" scrolling="no" frameborder="0" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" style="width:100%;border:none" src="https://webforms.skyways-group.com/embed.php?id=11755" title="Free Quote"><a href="https://webforms.skyways-group.com/view.php?id=11755" title="Free Quote">Free Quote</a></iframe>
+                                
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					    </div>
+                  </div>
+				  
+               </section>
+			   
+			   
+			   
+			   
+	   
+
+
+
+			 <section id="footer-wrapper" class="footer-dark">
+                  <footer id="footer">
+                     <!-- .container start -->
+                     <div class="container">
+                        <!-- .row start -->
+                        <div class="row">
+                           <!-- animated fadeInTop -->
+                           <section >
+                              <ul class="footer-widget-container col-md-3">
+                                 <li id="media_image-2" class="widget widget_media_image"><img src="../images/skywayslogo_new.png" /></li>
+                                 <li id="text-2" class="widget widget_text">
+                                    <div class="ftlogotext">
+                                     <h5> Skyways Air Services Limited</h5>
+									  <p> (Formerly Known as Skyways Air Services Private Limited) </p>
+                                    </div>
+									 
+									 
+									 
+                                 </li>
+                              </ul>
+                              <ul class="footer-widget-container col-md-2">
+                                 <li id="nav_menu-1" class="widget widget_nav_menu">
+                                    <div class="title">
+                                       <h3>OUR SERVICES</h3>
+                                    </div>
+                                    <div class="menu-our-services-container">
+                                       <ul id="menu-our-services" class="menu">
+                                          <li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-824"><a href="/air-freight">Air Freight</a></li>
+                                          <li id="menu-item-823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-823"><a href="/contract-logistics">Contract Logistics</a></li>
+                                          <li id="menu-item-822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-822"><a href="/cuddle">Cuddle</a></li>
+                                          <li id="menu-item-1137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1137"><a href="/d-tox">D-tox</a></li>
+                                          <li id="menu-item-825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-825"><a href="/warehousing">Warehousing</a></li>
+                                         <!-- <li id="menu-item-1136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136"><a href="/cold-storage">Cold Storage</a></li>-->
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+							  
+							  
+						
+							  
+							  
+							  
+							  
+                              <ul class="footer-widget-container col-md-3">
+                                 <li id="volcanno_contact_info-2" class="widget contact-info">
+                                    <div class="title">
+                                       <h3>GET IN TOUCH</h3>
+                                    </div>
+                                    <address>
+                                       <ul class='contact-info-list'>
+                                          <li>                        
+                                             <i class='fa fa-home'></i><strong>Regd. Address:</strong><br/>RZ A -128 & 129, Mahipalpur Extension NH-8, New Delhi - 110037, India                      
+                                          </li>
+                                          <li>                       
+                                             <i class='fa fa-envelope-o'></i>
+                                             <a href="mailto:info@skyways-group.com"><span class="mail_span">info@skyways-group.com</span></a>                        
+                                          </li>
+										  <li>                       
+                                             <i class='fa fa-phone'></i>
+                                             <a href="tel: 01145150500"><span class="mail_span">011 4515 0500</span></a>                        
+                                          </li>
+                                       </ul>
+                                    </address>
+                                 </li>
+                              </ul>
+							  
+							  	   <ul class="footer-widget-container col-md-2">
+                                 <li id="nav_menu-1" class="widget widget_nav_menu">
+                                    <div class="title">
+                                       <h3>Other Links</h3>
+                                    </div>
+                                    <div class="menu-our-services-container">
+                                       <ul id="menu-our-services" class="menu">
+									    <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/careers">Careers</a></li>
+									   <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/awards">Awards</a></li>
+									   <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/press-release">Press Release</a></li>
+									 <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/photo-gallery">Photo Gallery</a></li>
+                                          
+                                 
+									   
+									   
+									   
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+							  
+                              <ul class="footer-widget-container col-md-2">
+                                 <li id="black-studio-tinymce-2" class="widget widget_black_studio_tinymce">
+                                    <div class="title">
+                                       <h3>Follow Us on</h3>
+                                    </div>
+                                    <div class="textwidget">
+                                       <ul>
+                                          <li><a href="https://www.facebook.com/skywayslogisticsgroup/" target="_blank" class="social-facebook" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="https://www.linkedin.com/company/33243275/" target="_blank" class="social-linkedin" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </section>
+                        </div>
+                        <!-- .row end -->
+						
+								  <div class="ntop">
+          <a href="#top">
+            <div class="circleTop"></div>
+
+            <img src="images/top_arrow.png" alt="" class="img-fluid">
+          </a>
+						
+						
+                     </div>
+                     <!-- .container end -->                
+                  </footer>
+                  <!-- .footer-end -->
+                  <!-- copyright container start -->
+                  <section id="copyright-container" class="copyright-container">
+                     <!-- .container start -->
+                     <div class="container">
+                        <!-- .row start -->
+                        <div class="row">
+                           <section class="col-md-6">
+                              <p>© Skyways Air Services Limited. All Rights Reserved.
+                              </p>
+                           </section>
+                           <section class="col-md-6 copyright-right">
+                              <p>
+                                 Design and Developed by sGate Tech Solutions Private Limited.
+                              </p>
+                           </section>
+                           <!-- .col-md-6 omega end -->        
+                        </div>
+                        <!-- .row end -->
+                     </div>
+                     <!-- .container end -->
+                  </section>
+                  <!-- .copyright-container end -->
+               </section>
+               <!-- .footer-wrapper end -->
+               <a href="#" class="scroll-up">Scroll</a>
+               <div class="clear"></div>
+               
+               <link rel='stylesheet' id='responsive-lightbox-gallery-css' href='/css/gallery.css' type='text/css' media='all' />
+               <style id='responsive-lightbox-gallery-inline-css' type='text/css'>
+                  :root {
+                  --rl-gallery-background_color: #000000;
+                  --rl-gallery-background_opacity: 0.8;
+                  --rl-gallery-border_color: #000000;
+                  --rl-gallery-title_color: #ffffff;
+                  --rl-gallery-caption_color: #cccccc;
+                  }
+                  .rl-gallery .rl-gallery-link {
+                  border: 0px solid #000000;
+                  }
+                  .rl-gallery .rl-gallery-link .rl-gallery-item-title {
+                  color: #ffffff;
+                  }
+                  .rl-gallery .rl-gallery-link .rl-gallery-item-caption {
+                  color: #cccccc;
+                  }
+                  .rl-gallery .rl-gallery-link .rl-gallery-caption,
+                  .rl-gallery .rl-gallery-link:after {
+                  background-color: rgba( 0,0,0, 0.8 );
+                  }
+                  [class^="rl-hover-icon-"] .rl-gallery-link:before,
+                  [class*=" rl-hover-icon-"] .rl-gallery-link:before {
+                  color: #ffffff;
+                  background-color: rgba( 0,0,0, 0.8 );
+                  }
+               </style>
+               <link rel='stylesheet' id='responsive-lightbox-basicgrid-gallery-css' href='css/gallery-basicgrid.css' type='text/css' media='all' />
+               <style id='responsive-lightbox-basicgrid-gallery-inline-css' type='text/css'>
+                  #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+                  width: calc(33.33% - 2px);
+                  margin: 1px;
+                  }
+                  @media all and (min-width: 1200px) {
+                  #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+                  width: calc(25% - 2px);
+                  }
+                  }
+                  @media all and (min-width: 992px) and (max-width: 1200px) {
+                  #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+                  width: calc(33.33% - 2px);
+                  }
+                  }
+                  @media all and (min-width: 768px) and (max-width: 992px) {
+                  #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+                  width: calc(50% - 2px);
+                  }
+                  }
+                  @media all and (max-width: 768px) {
+                  #rl-gallery-container-1 .rl-basicgrid-gallery .rl-gallery-item {
+                  width: calc(100% - 2px);
+                  }
+                  }
+               </style>
+		         <script type="text/javascript" src="js/include.js" id="volcanno_include-js"></script>
+               <script type="text/javascript" src="js/app.js" id="ht_ctc_app_js-js"></script>
+               <script type="text/javascript" src="js/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+               <script type="text/javascript" src="js/index.js" id="contact-form-7-js"></script>
+               <script type="text/javascript" src="js/jquery.plugins.min.js" id="volcanno_jquery_plugins-js"></script>
+               <script type="text/javascript" src="js/jquery.dlmenu.min.js" id="dl-menu-js"></script>
+               <script type="text/javascript" src="js/jquery.matchHeight-min.js" id="match-heights-js"></script>
+              
+               <script type="text/javascript" src="js/services.js" id="cma-scripts-services-js"></script>
+               <script type="text/javascript" src="js/owl.carousel.min.js" id="owl-carousel-js"></script>
+               <script type="text/javascript" src="js/services_1.js" id="cma-scripts-services-1-js"></script>
+               <script type="text/javascript" src="js/jquery.easing.min.js" id="jquery-easing-js"></script>
+               <script type="text/javascript" src="js/masterslider.min.js" id="masterslider-core-js"></script>
+               <script type="text/javascript" src="js/slick.min.js" id="wpcf-slick-js"></script>
+               <script type="text/javascript" src="js/wp-carousel-free-public.min.js" id="wpcf-slick-config-js"></script>
+               <script type="text/javascript" src="js/preloader.min.js" id="wpcp-preloader-js"></script>
+			   			   			   
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+</script>
+<script>new WOW().init();</script>
+  
+            </body>
+         </html>
