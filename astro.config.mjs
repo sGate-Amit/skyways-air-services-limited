@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://skyways-air.in/",
   output: "server", // 🔴 REQUIRED for Cloudflare adapter
   integrations: [mdx(), sitemap()],
   adapter: cloudflare({
